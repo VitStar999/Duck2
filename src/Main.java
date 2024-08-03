@@ -1,8 +1,8 @@
+import ducs.DecoyDuck;
 import ducs.MallarDuck;
 import ducs.RedHeadDuck;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
 
@@ -14,5 +14,12 @@ public class Main {
         MallarDuck mallarDuck = new MallarDuck();
         mallarDuck.swim();
         mallarDuck.display();
+        mallarDuck.fly();
+        mallarDuck.quack();
+
+        DecoyDuck decoyDuck = new DecoyDuck();
+        decoyDuck.display();
+        decoyDuck.swim();
+
     }
 }
