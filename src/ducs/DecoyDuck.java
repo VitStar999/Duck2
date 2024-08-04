@@ -1,8 +1,6 @@
 package ducs;
 
-import ducs.abstrac.Duck;
-import ducs.abstrac.Flyable;
-import ducs.abstrac.Quackable;
+import ducs.ducksbehavior.quackable.Duck;
 
 public class DecoyDuck extends Duck  {
 

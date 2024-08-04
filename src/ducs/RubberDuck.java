@@ -1,15 +1,22 @@
 package ducs;
 
-import ducs.abstrac.Duck;
-import ducs.abstrac.Quackable;
+import ducs.ducksbehavior.flyable.FlyNoWay;
+import ducs.ducksbehavior.flyable.FlyWithWings;
+import ducs.ducksbehavior.quackable.Duck;
+import ducs.ducksbehavior.quackable.Quack;
+import ducs.ducksbehavior.quackable.QuackBehavior;
+import ducs.ducksbehavior.quackable.Squeak;
 
-public class RubberDuck extends Duck implements Quackable {
+public class RubberDuck extends Duck implements QuackBehavior {
 
-    @Override
-   public void display() {
-        System.out.println(" Rubber Duck");
+    public RubberDuck() {
+        quackBehavior = new Squeak();
+        flyBehavior = new FlyNoWay();
     }
-
+    @Override
+    public void display() {
+        System.out.println("Display Rubber Duck");
+    }
 
 
     @Override

@@ -1,10 +1,10 @@
 package ducs;
 
-import ducs.abstrac.Duck;
-import ducs.abstrac.Flyable;
-import ducs.abstrac.Quackable;
+import ducs.ducksbehavior.quackable.Duck;
+import ducs.ducksbehavior.flyable.FlyBehavior;
+import ducs.ducksbehavior.quackable.QuackBehavior;
 
-public class RedHeadDuck extends Duck implements Flyable, Quackable {
+public class RedHeadDuck extends Duck implements FlyBehavior, QuackBehavior {
 
     @Override
     public void display() {
